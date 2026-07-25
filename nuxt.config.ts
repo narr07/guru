@@ -50,27 +50,12 @@ export default defineNuxtConfig({
   // },
 
   nitro: {
-    // preset: 'cloudflare_module',
-    cloudflare: {
-      deployConfig: true,
-      wrangler: {
-        d1_databases: [
-          {
-            binding: 'DB',
-            database_name: 'guru_db',
-            database_id: '3f244695-ceb9-4145-bf8d-27d667c043c6'
-          }
-        ]
-      }
-    },
+    preset: 'cloudflare_pages',
     prerender: {
       routes: [
         '/'
       ],
       crawlLinks: true
-    },
-    rollupConfig: {
-      external: ['agents/mcp']
     }
   },
 

@@ -2,6 +2,7 @@
   "name": "guru",
   "private": true,
   "type": "module",
+  "packageManager": "bun@1.2.15",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
