@@ -36,6 +36,19 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-06-30',
 
+  routeRules: {
+    '/pendahuluan/**': { swr: true },
+    '/mulai-di-sini/**': { swr: true },
+    '/administrasi/**': { swr: true },
+    '/kurikulum-merdeka/**': { swr: true },
+    '/materi-bahan-ajar/**': { swr: true },
+    '/strategi-metode/**': { swr: true },
+    '/teknologi-digital/**': { swr: true },
+    '/pengembangan-profesional/**': { swr: true },
+    '/kesejahteraan-soft-skills/**': { swr: true },
+    '/sumber-daya-referensi/**': { swr: true }
+  },
+
   nitro: {
     preset: 'cloudflare_module',
     cloudflare: {
@@ -54,7 +67,10 @@ export default defineNuxtConfig({
       routes: [
         '/'
       ],
-      crawlLinks: true
+      crawlLinks: false
+    },
+    rollupConfig: {
+      external: ['agents/mcp']
     }
   },
 
