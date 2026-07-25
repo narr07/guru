@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-og-image',
     'nuxt-llms',
-    '@nuxtjs/mcp-toolkit'
+    '@nuxtjs/mcp-toolkit',
+    'nuxt-studio'
   ],
 
   devtools: {
@@ -20,7 +21,7 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         toc: {
-          searchDepth: 1
+          searchDepth: 3
         }
       }
     },
@@ -36,6 +37,19 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-06-30',
 
   nitro: {
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      wrangler: {
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_name: 'guru_db',
+            database_id: '3f244695-ceb9-4145-bf8d-27d667c043c6'
+          }
+        ]
+      }
+    },
     prerender: {
       routes: [
         '/'
@@ -141,5 +155,14 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true
+  },
+
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'narr07',
+      repo: 'guru',
+      branch: 'master'
+    }
   }
 })

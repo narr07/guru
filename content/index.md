@@ -12,10 +12,10 @@ orientation: horizontal
 :hero-background
 
 #title
-Ship Beautiful [Documentation]{.text-primary}.
+Belajar Lebih Mudah dan  [Efektif]{.text-primary}.
 
 #description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
+Dokumentasi guru yang lengkap, mudah diakses, dan dapat digunakan kembali untuk semua jenjang pendidikan. Guru permadi adalah platform untuk berbagi pengetahuan dan pengalaman antar guru.
 
 #links
   :::u-button
