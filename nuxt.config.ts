@@ -159,6 +159,7 @@ export default defineNuxtConfig({
   },
 
   studio: {
+    route: '/guru',
     repository: {
       provider: 'github',
       owner: 'narr07',
