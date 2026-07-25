@@ -68,9 +68,6 @@ export default defineNuxtConfig({
         '/'
       ],
       crawlLinks: false
-    },
-    rollupConfig: {
-      external: ['agents/mcp']
     }
   },
 
