@@ -151,7 +151,7 @@ export default defineNuxtConfig({
   },
 
   mcp: {
-    name: 'Docs template'
+    name: 'Portal Dokumentasi Guru SD'
   },
 
   ogImage: {
