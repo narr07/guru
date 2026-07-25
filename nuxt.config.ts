@@ -18,6 +18,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   content: {
+    database: {
+      type: 'd1',
+      bindingName: 'guru'
+    },
     build: {
       markdown: {
         toc: {
