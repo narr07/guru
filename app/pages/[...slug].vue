@@ -86,6 +86,7 @@ const links = computed(() => {
       <UContentToc
         :title="toc?.title"
         :links="page.body?.toc?.links"
+       highlight highlight-color="primary" highlight-variant="circuit"
       >
         <template
           v-if="toc?.bottom"
