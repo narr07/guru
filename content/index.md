@@ -4,15 +4,18 @@ seo:
   description: Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
 ---
 
-::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
+::u-page-hero
 ---
-orientation: horizontal
+class: dark:bg-gradient-to-b from-neutral-900 to-neutral-950
+orientation: vertical
 ---
+
+
 #top
 :hero-background
 
 #title
-Belajar Lebih Mudah dan  [Efektif]{.text-primary}.
+Belajar Lebih Mudah dan [Efektif]{.text-primary}.
 
 #description
 Dokumentasi guru yang lengkap, mudah diakses, dan dapat digunakan kembali untuk semua jenjang pendidikan. Guru permadi adalah platform untuk berbagi pengetahuan dan pengalaman antar guru.
@@ -20,8 +23,8 @@ Dokumentasi guru yang lengkap, mudah diakses, dan dapat digunakan kembali untuk 
 #links
   :::u-button
   ---
-  to: /pendahuluan/latar-belakang
   size: xl
+  to: /pendahuluan/latar-belakang
   trailing-icon: i-lucide-arrow-right
   ---
   Mulai Membaca
@@ -29,49 +32,21 @@ Dokumentasi guru yang lengkap, mudah diakses, dan dapat digunakan kembali untuk 
 
   :::u-button
   ---
-  icon: i-simple-icons-github
   color: neutral
-  variant: outline
+  icon: i-simple-icons-github
   size: xl
-  to: https://github.com/nuxt-ui-templates/docs
   target: _blank
+  to: https://github.com/nuxt-ui-templates/docs
+  variant: outline
   ---
   Use this template
   :::
-
-#default
-  :::prose-pre
-  ---
-  code: |
-    export default defineNuxtConfig({
-      modules: [
-        '@nuxt/ui',
-        '@nuxt/content',
-        'nuxt-og-image',
-        'nuxt-llms'
-      ],
-
-      css: ['~/assets/css/main.css']
-    })
-  filename: nuxt.config.ts
-  ---
-
-  ```ts [nuxt.config.ts]
-  export default defineNuxtConfig({
-    modules: [
-      '@nuxt/ui',
-      '@nuxt/content',
-      'nuxt-og-image',
-      'nuxt-llms'
-    ],
-
-    css: ['~/assets/css/main.css']
-  })
-  ```
-  :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Powered by Nuxt UI components
 
@@ -156,7 +131,10 @@ Powered by Nuxt UI components
   :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section
+---
+class: dark:bg-neutral-950
+---
 #title
 Enhanced with Nuxt Content
 
@@ -241,23 +219,23 @@ Enhanced with Nuxt Content
   :::
 ::
 
-::u-page-section{class="dark:bg-gradient-to-b from-neutral-950 to-neutral-900"}
+::u-page-section{.dark:bg-gradient-to-b.from-neutral-950.to-neutral-900}
   :::u-page-c-t-a
   ---
   links:
     - label: Mulai Sekarang
-      to: '/pendahuluan/latar-belakang'
+      to: /pendahuluan/latar-belakang
       trailingIcon: i-lucide-arrow-right
     - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/docs'
+      to: https://github.com/nuxt-ui-templates/docs
       target: _blank
       variant: subtle
       icon: i-simple-icons-github
-  title: Ready to build an amazing documentation?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
   class: dark:bg-neutral-950
+  description: Join thousands of developers building with Nuxt and Nuxt UI. Get
+    this template and start shipping today.
+  title: Ready to build an amazing documentation?
   ---
-
   :stars-bg
   :::
 ::
