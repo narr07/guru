@@ -18,7 +18,7 @@ export default defineAppConfig({
     title: '',
     to: '/',
     logo: {
-      alt: '',
+      alt: 'Portal Dokumentasi Guru SD',
       light: '',
       dark: ''
     },
@@ -26,46 +26,35 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt-ui-templates/docs',
+      'to': 'https://github.com/narr07/guru',
       'target': '_blank',
       'aria-label': 'GitHub'
     }]
   },
   footer: {
-    credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
+    credits: `Portal Dokumentasi Guru SD • © ${new Date().getFullYear()}`,
     colorMode: false,
     links: [{
-      'icon': 'i-simple-icons-discord',
-      'to': 'https://go.nuxt.com/discord',
-      'target': '_blank',
-      'aria-label': 'Nuxt on Discord'
-    }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://go.nuxt.com/x',
-      'target': '_blank',
-      'aria-label': 'Nuxt on X'
-    }, {
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
+      'to': 'https://github.com/narr07/guru',
       'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
+      'aria-label': 'GitHub'
     }]
   },
   toc: {
-    title: 'Table of Contents',
+    title: 'Daftar Isi',
     bottom: {
-      title: 'Community',
-      edit: 'https://github.com/nuxt-ui-templates/docs/edit/main/content',
+      title: 'Aksi Cepat',
+      edit: 'https://github.com/narr07/guru/edit/master/content',
       links: [{
         icon: 'i-lucide-star',
-        label: 'Star on GitHub',
-        to: 'https://github.com/nuxt/ui',
+        label: 'Beri Bintang di GitHub',
+        to: 'https://github.com/narr07/guru',
         target: '_blank'
       }, {
-        icon: 'i-lucide-book-open',
-        label: 'Nuxt UI docs',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-        target: '_blank'
+        icon: 'i-lucide-download',
+        label: 'Template Siap Pakai',
+        to: '/administrasi/kumpulan-template-siap-pakai'
       }]
     }
   }
